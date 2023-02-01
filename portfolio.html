@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>homework5</title>
+    <title>homework</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -14,7 +14,41 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
+    <div class="modal is-hidden" data-modal>
+      <div class="inner-modal">
+        <button type="button" class="close-modal" data-modal-close><svg class="close-icon">
+          <use href="./images/social-icons.svg#icon-close"></use></svg></button>
+          <h3 class="form-title">
+            Leave your information and we'll call you back
+          </h3>
+          <form class="contact-form" autocomplete="off">
+            <label>Name
+              <input  type="text" name="name">
+              <svg class="form-icon"><use href="./images/symbol-defs.svg#icon-person"></use></svg>
+            </label>
+            <label>Telephone
+              <input type="tel" name="phone">
+              <svg class="form-icon"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>
+            </label>
+            <label>E-mail
+              <input type="email" name="e-mail">
+              <svg class="form-icon"><use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
+            </label>
+            <label> Comments
+              <textarea name="comments" placeholder="Enter the text"></textarea>
+            </label>
+          </form>
+          <label class="form-agreement"> <input  class="checkbox"type="checkbox" name="agreement" checked>
+            <span class="form-span"></span>I agree with the letter and accept the <a  href="#" class="form-link">Terms and Conditions</a>
+            <svg><use href="./images/symbol-defs.svg#icon-vector"></use></svg>
+          </label>
+          <button class="form-button" type="submit">Send</button>
+        </div>
+      
+    </div>
     <header class="page-header">
       <nav class="main-nav"> 
         <div class="header-left">
@@ -28,135 +62,138 @@
           </ul>
         </div>
         <div class="header-right">
-          <ul class="contact-list unstyled-list horizontal-list contact-list">
-            <li class="contact-list-item">
-              <div class="header-icon">
-                <svg class="smartphone-icon">
-                  <use href="/images/social-icons.svg#icon-envelope"></use>
+          <ul class="contact-list unstyled-list horizontal-list contact-list">  
+            <div class="header-email">
+              <li class="contact-list-item">  
+                <svg class="contact-icon" width="16" height="12">
+                  <use href="./images/social-icons.svg#icon-envelope"></use>
+                </svg> 
+              </li>
+              <li class="contact-list-item">
+                <a class="contact-nav-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </div>
+            <div class="header-phone">
+              <li class="contact-list-item">
+                <svg class="contact-icon" width="10" height="16">
+                  <use href="./images/social-icons.svg#icon-smartphone"></use>
                 </svg>
-              </div>
-            </li>
-            <li class="contact-list-item">
-              <a class="contact-nav-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="contact-list-item">
-              <div class="header-icon">
-                <svg class="smartphone-icon">
-                  <use href="/images/social-icons.svg#icon-smartphone"></use>
-                </svg>
-              </div>
-            </li>
-            <li class="contact-list-item">
-              <a class="contact-nav-link link" href="tel:+12127724150">+1 212-772-4150</a>
-            </li>
+              
+              </li>
+              <li class="contact-list-item">
+                <a class="contact-nav-link link" href="tel:+12127724150">+1 212-772-4150</a>
+              </li>
+          </div>
           </ul>
         </div>  
       </nav> 
     </header>
     <main>
       <section class="product-section">
-        <div class="product-button">
-          <ul class="unstyled-list horizontal-list">
-            <li><button class="page-button" type="button">All</button></li>
-            <li><button class="page-button" type="button">Web-sites</button></li>
-            <li><button class="page-button" type="button">Apps</button></li>
-            <li><button class="page-button" type="button">Design</button></li>
-            <li><button class="page-button" type="button">Marketing</button></li>
-          </ul>
-        </div> 
-          <ul class="product-list">
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+        <div class="product-container">
+          <div class="product-button">
+            <ul class="unstyled-list horizontal-list">
+              <li><button class="page-button" type="button">All</button></li>
+              <li><button class="page-button" type="button">Web-sites</button></li>
+              <li><button class="page-button" type="button">Apps</button></li>
+              <li><button class="page-button" type="button">Design</button></li>
+              <li><button class="page-button" type="button">Marketing</button></li>
+            </ul>
+          </div> 
+            <ul class="product-list">
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                    <img width="350px" src="images/technoduck.jpg" alt="Technoduck" />
+                    <h3 class="product-title">Technoduck</h3>
+                    <p class="product-description">Web-site</p>
                 </div>
-                  <img width="350px" src="images/technoduck.jpg" alt="Technoduck" />
-                  <h3 class="product-title">Technoduck</h3>
+              </li>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/poster.jpg" alt="Poster New Orlean vs Golden Star" />
+                  <h3 class="product-title">Poster New Orlean vs Golden Star</h3>
+                  <p class="product-description">Design</p>
+                </div>
+              </li>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/seafood_restaurant.jpg" alt="Seafood Restaurant" />
+                  <h3 class="product-title">Seafood Restaurant</h3>
+                  <p class="product-description">Apps</p>
+                </div>
+                </li>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/project_prime.jpg" alt="Project Prime" />
+                  <h3 class="product-title">Project Prime</h3>
+                  <p class="product-description">Marketing</p>
+                </div>
+              </li>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/project_boxes.jpg" alt="Project Boxes" />
+                  <h3 class="product-title">Project Boxes</h3>
+                  <p class="product-description">Apps</p>
+                </div>
+              </li>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/inspiration.jpg" alt="Inspiration has no Borders" />
+                  <h3 class="product-title">Inspiration has no Borders</h3>
                   <p class="product-description">Web-site</p>
-              </div>
-            </li>
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
                 </div>
-                <img width="350px" src="images/poster.jpg" alt="Poster New Orlean vs Golden Star" />
-                <h3 class="product-title">Poster New Orlean vs Golden Star</h3>
-                <p class="product-description">Design</p>
-              </div>
-            </li>
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
-                </div>
-                <img width="350px" src="images/seafood_restaurant.jpg" alt="Seafood Restaurant" />
-                <h3 class="product-title">Seafood Restaurant</h3>
-                <p class="product-description">Apps</p>
-              </div>
               </li>
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/limited_edition.jpg" alt="Limited Edition" />
+                  <h3 class="product-title">Limited Edition</h3>
+                  <p class="product-description">Design</p>
                 </div>
-                <img width="350px" src="images/project_prime.jpg" alt="Project Prime" />
-                <h3 class="product-title">Project Prime</h3>
-                <p class="product-description">Marketing</p>
-              </div>
-            </li>
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                </li>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/project_lab.jpg" alt="Project LAB" />
+                  <h3 class="product-title">Project LAB</h3>
+                  <p class="product-description">Marketing</p>
                 </div>
-                <img width="350px" src="images/project_boxes.jpg" alt="Project Boxes" />
-                <h3 class="product-title">Project Boxes</h3>
-                <p class="product-description">Apps</p>
-              </div>
-            </li>
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
-                </div>
-                <img width="350px" src="images/inspiration.jpg" alt="Inspiration has no Borders" />
-                <h3 class="product-title">Inspiration has no Borders</h3>
-                <p class="product-description">Web-site</p>
-              </div>
-            </li>
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
-                </div>
-                <img width="350px" src="images/limited_edition.jpg" alt="Limited Edition" />
-                <h3 class="product-title">Limited Edition</h3>
-                <p class="product-description">Design</p>
-              </div>
               </li>
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+              <li class="product-list-item">
+                <div class="product-box">
+                  <div class="overlay">
+                    <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
+                  </div>
+                  <img width="350px" src="images/growing_business.jpg" alt="Growing Business" />
+                  <h3 class="product-title">Growing Business</h3>
+                  <p class="product-description">Apps</p>
                 </div>
-                <img width="350px" src="images/project_lab.jpg" alt="Project LAB" />
-                <h3 class="product-title">Project LAB</h3>
-                <p class="product-description">Marketing</p>
-              </div>
-            </li>
-            <li class="product-list-item">
-              <div class="product-box">
-                <div class="overlay">
-                  <p class="overlay-text">Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p>
-                </div>
-                <img width="350px" src="images/growing_business.jpg" alt="Growing Business" />
-                <h3 class="product-title">Growing Business</h3>
-                <p class="product-description">Apps</p>
-              </div>
-            </li>
-          </ul>
-        </div>    
+              </li>
+            </ul>
+            
+        </div>  
       </section>
     </main>
 

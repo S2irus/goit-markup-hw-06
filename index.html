@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>homework5</title>
+    <title>homework</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -31,7 +31,7 @@
             <label>Telephone
               <input type="tel" name="phone">
               <svg class="form-icon"><use href="./images/symbol-defs.svg#icon-phone"></use></svg>
-            </label>
+            </label>  
             <label>E-mail
               <input type="email" name="e-mail">
               <svg class="form-icon"><use href="./images/symbol-defs.svg#icon-email"></use>
@@ -45,7 +45,10 @@
             <span class="form-span"></span>I agree with the letter and accept the <a  href="#" class="form-link">Terms and Conditions</a>
             <svg><use href="./images/symbol-defs.svg#icon-vector"></use></svg>
           </label>
+          <div class="box-button">
+          <button class="form-button" type="submit">Send</button>
         </div>
+      </div>
       
     </div>
     <header class="page-header">
@@ -61,27 +64,28 @@
           </ul>
         </div>
         <div class="header-right">
-          <ul class="contact-list unstyled-list horizontal-list contact-list">
-            <li class="contact-list-item">
-              <div class="header-icon">
-                <svg class="smartphone-icon">
+          <ul class="contact-list unstyled-list horizontal-list contact-list">  
+            <div class="header-email">
+              <li class="contact-list-item">  
+                <svg class="contact-icon" width="16" height="12">
                   <use href="./images/social-icons.svg#icon-envelope"></use>
-                </svg>
-              </div>
-            </li>
-            <li class="contact-list-item">
-              <a class="contact-nav-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="contact-list-item">
-              <div class="header-icon">
-                <svg class="smartphone-icon">
+                </svg> 
+              </li>
+              <li class="contact-list-item">
+                <a class="contact-nav-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+            </div>
+            <div class="header-phone">
+              <li class="contact-list-item">
+                <svg class="contact-icon" width="10" height="16">
                   <use href="./images/social-icons.svg#icon-smartphone"></use>
                 </svg>
-              </div>
-            </li>
-            <li class="contact-list-item">
-              <a class="contact-nav-link link" href="tel:+12127724150">+1 212-772-4150</a>
-            </li>
+              
+              </li>
+              <li class="contact-list-item">
+                <a class="contact-nav-link link" href="tel:+12127724150">+1 212-772-4150</a>
+              </li>
+          </div>
           </ul>
         </div>  
       </nav> 
@@ -105,7 +109,7 @@
             <ul class="about-list">
               <div class="text-boxes">
                 <div class="background-icon">
-                  <svg class="antenna-icon">
+                  <svg class="about-icon" widh="65" height="70">
                     <use href="./images/social-icons.svg#icon-antenna"></use>
                   </svg>
                 </div>
@@ -119,7 +123,7 @@
               </div>
               <div class="text-boxes">
                 <div class="background-icon">
-                  <svg class="clock-icon">
+                  <svg class="about-icon" widh="67" height="70">
                     <use href="./images/social-icons.svg#icon-clock"></use>
                   </svg>
                 </div>
@@ -133,7 +137,7 @@
               </div>
               <div class="text-boxes">
                 <div class="background-icon">
-                  <svg class="diagram-icon">
+                  <svg class="about-icon" widh="70" height="54">
                     <use href="./images/social-icons.svg#icon-diagram"></use>
                   </svg>
                 </div>
@@ -147,7 +151,7 @@
               </div>
               <div class="text-boxes">
                 <div class="background-icon">
-                  <svg class="astronaut-icon">
+                  <svg class="about-icon" widh="70" height="70">
                     <use href="./images/social-icons.svg#icon-astronaut"></use>
                   </svg>
                 </div>
@@ -358,7 +362,7 @@
       <section class="customer-section">
         <div class="customer-box">
           <h2 class="section-title">Regular Customers</h2>
-          <ul class="customer-list unstyled-list horizontal-list">
+          <ul class="customer-list unstyled-list">
             <li class="customer-item">
               <svg class="customer-icon">
                 <use href="./images/social-icons.svg#icon-logo1"></use>
@@ -440,7 +444,7 @@
               SUBSCRIBE TO THE NEWSLETTER
             </h4>
             <input class="email-section" type="email" name="e-mail" placeholder="E-mail">
-            <button  class="form-button" type="submit"> Subscribe
+            <button  class="form-button-footer" type="submit"> Subscribe
             <svg class="email-icon"><use href="./images/symbol-defs.svg#icon-send">
             </use></svg></button>
           </div> 
