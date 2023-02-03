@@ -117,27 +117,31 @@ ul {
   color: var(--subtitle-color);
   margin-right: 40px;
 }
-/*nu functioneaza border bottom pe hover*/
+
+/*cubic-bezier(0.4, 0, 0.2, 1)* 50ms*/
 
 .main-nav-link:hover,
 .main-nav-link:active,
 .main-nav-link:focus {
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
   color: var(--highlight-color);
-  border-bottom: 4px var(--highlight-color);
+  border-bottom: 4px solid var(--highlight-color);
   }
 .contact-nav-link:hover,
 .contact-nav-link:active,
 .contact-nav-link:focus {
   color: var(--highlight-color);
-  border-bottom: 4px var(--highlight-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
 }
 
 /*nu pot hune fill pe icon*/
 
-.header-email:focus-within .contact-icon{
+.header-email:hover .contact-icon{
   fill: var(--highlight-color);
 }
-.header-phone:focus-within .contact-icon{
+.header-phone:hover .contact-icon{
   fill: var(--highlight-color);
 }
 .header-icon {
@@ -240,6 +244,8 @@ ul {
 }
 .about-icon:hover {
   fill: var(--highlight-color );
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
 }
 
 /*Our team section*/
@@ -303,6 +309,8 @@ background-color: #f5f4fa;
 .social-link:focus {
   background-color: var(--highlight-color);
   color: var(--white-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
 }
 .social-link {
   width: 44px;
@@ -372,12 +380,16 @@ background-color: #f5f4fa;
 .customer-icon:hover,
 .customer-icon:active,
 .customer-icon:focus {
-  color: var(--highlight-color);
+  fill: var(--highlight-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
 }
 .customer-item:hover,
 .customer-item:active,
 .customer-item:focus{
   border: 1px solid var(--highlight-color); 
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
 }
 .customer-item {
   border: solid;
@@ -385,21 +397,14 @@ background-color: #f5f4fa;
   border-radius: 4px;
   padding: 16px 32px;
   display: flex;
- 
 }
-.customer-icon{
-  fill:var(--icon-color);
-}
-.customer-icon:hover {
-  fill: var(--highlight-color );
-}
+
 
 /*footer section*/
 
 .page-footer {
   background: #2f303a;
   color: var(--white-color);
-  padding: 15px 50px;
   align-items: center;
   width: 100%;
   margin: 0 auto;
@@ -423,7 +428,7 @@ background-color: #f5f4fa;
 
 .footer-social-link {
   background-color;
-width: 44px;
+  width: 44px;
   height: 44px;
   display: flex;
   justify-content: center;
@@ -436,7 +441,9 @@ width: 44px;
 .footer-socialsocial-link:active,
 .footer-socialsocial-link:focus {
   background-color: var(--highlight-color);
-  color: var(--white-color);}
+  color: var(--white-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;}
 
   .social-list-item{
        
@@ -445,15 +452,19 @@ width: 44px;
     display: flex;
     flex-direction: column;
     margin-left: 70px;
+    width: 25%;
   }
   .footer-center{
     display: flex;
     flex-direction: column;
-
+    width: 25%;
+    align-items: flex-start;
   }
   .footer-right{
     display: flex;
     flex-direction: row;
+    width: 50%;
+    margin-right: 80px;
   }
 
 .footer-adress{
@@ -462,10 +473,10 @@ font-style: normal;
 width: 100%;
 display: flex;
 flex-direction: row;
-gap: 70px;
+gap: 30px;
 align-items: center;
 justify-content: center;
-
+padding: 60px 0px 60px 0px;
 }
 
 /*Modal*/
@@ -479,7 +490,7 @@ z-index: 99;
 display: flex;
 justify-content: center;
 align-items: center;
-transition: opacity 3000ms linear, transform 500ms linear;
+transition: opacity 300ms linear, transform 500ms linear;
 }
 
 .inner-modal{
@@ -576,9 +587,13 @@ width: 11px;
 
 .contact-form-input:focus-within .form-icon{
   fill: var(--highlight-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
 }
 .contact-form textarea:focus ::placeholder {
   color: var(--highlight-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
 }
 .contact-form textarea {
   width: 448px;
@@ -601,6 +616,7 @@ width: 11px;
   font-size: 14px;
   line-height: 1.71;
   position: relative;
+  cursor: pointer;
 }
 .inner-modal .form-button {
   margin-left: 164px;
@@ -645,7 +661,7 @@ width: 11px;
   border-radius: 2px;
 }
 
-input[type="checkbox"]:checked+.checkbox-replace:hover {
+input[type="checkbox"]:checked+.checkbox-replace {
   background-color: var(--highlight-color);
   border: 1px solid var(--highlight-color);
 }
@@ -672,9 +688,10 @@ display: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin-right: 12px;
 }
 .form-button-footer {
-  width: 150px;
+  width: 180px;
   height: 50px;
   font-size: 16px;
   font-weight: 700px;
@@ -688,29 +705,33 @@ display: none;
   position: relative;
   cursor: pointer;
 }
+.subscribe{
 
+}
 /*Portfolio*/
 
 .product-section{
   width: 100%;
- margin: 0 auto;
-display: flex; 
-justify-content: center;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: center;
 }
 .product-list{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-justify-content: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 /*nu inteleg cum fac sa functioneze flex basis*/
 
 .product-list > li{
-  flex-basis: calc(100%/3);
   max-width: 350px;
 }
 .product-container{
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
 }
 .product-list-item {
@@ -718,8 +739,8 @@ justify-content: center;
  background: var(--white-color);
  border: 1px solid #eeeeee;
  margin-bottom: 20px;
- margin-right: 20px;
  cursor: pointer;
+ 
 }
 .product-list-item:hover,
 .product-list-item:active,
@@ -728,12 +749,14 @@ justify-content: center;
  border: 1px solid #eeeeee;
  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:  50ms;
 }
 .product-button {
  display: flex;
  justify-content: center;
- padding-top: 100px;
- padding-bottom: 56px;
+ padding-top: 70px;
+ padding-bottom: 30px;
  cursor: pointer;
 }
 .product-title {
@@ -748,12 +771,14 @@ justify-content: center;
  background-color: var(--highlight-color);
  color: var(--white-color);
  border: none;
+ transition: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-duration:  50ms;
 }
 .overlay{
  background-color: rgba(33, 150, 243, 0.9);
  position: absolute;
- top: 0%;
- left: 0%;
+ top: -1%;
+ left: 1%;
  width: 100%;
  height: 100%;
  transform:translateY(-100%);
@@ -764,9 +789,9 @@ justify-content: center;
  transition: transform 300ms ease-in;
 }
 .overlay-text{
- width: 350px;
+ width: 346px;
  color: var(--white-color);
- padding: 63px 24px 91px 24px;
+ padding: 64px 24px 91px 24px;
  font-weight: 400;
  font-size: 18px;
  line-height: 1.55;
